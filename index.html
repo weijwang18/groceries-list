@@ -5,10 +5,29 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Groceries List</title>
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/styles.css" rel="stylesheet" type="text/css">
   <script src="js/jquery-3.6.0.js"></script>
   <script src="js/scripts.js"></script>
 </head>
-<body>
-    
+<body class="container">
+  <header class="jumbotron">
+    <h1>Shopping List</h1>
+  </header>
+  <form id="formOne">
+    <div class="form-group" id="survey">
+      <label for="thingsNeeded">List the things you need, use "," to seperate each item</label>
+      <input id="thingsNeeded" type="text">
+    </div>
+
+    <button type="submit" class="btn">Submit</button>
+  </form>
+
+  <div id="result">
+    <p>HI,<span id="things"></span></p>
+    <ul id="groceriesList">
+      
+    </ul>
+  </div>
 </body>
 </html>
